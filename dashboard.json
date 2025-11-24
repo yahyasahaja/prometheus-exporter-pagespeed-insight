@@ -559,7 +559,7 @@
           },
           "editorMode": "code",
           "expr": "psi_total_blocking_time{site=\"https://www.lapakgaming.com/id-id/mobile-legends\"}",
-          "legendFormat": "__auto",
+          "legendFormat": "{{strategy}}",
           "range": true,
           "refId": "A"
         }
@@ -1096,7 +1096,7 @@
           },
           "editorMode": "code",
           "expr": "psi_total_blocking_time{site=\"https://www.lapakgaming.com/id-id\"}",
-          "legendFormat": "__auto",
+          "legendFormat": "{{strategy}}",
           "range": true,
           "refId": "A"
         }
@@ -1984,7 +1984,7 @@
           },
           "editorMode": "code",
           "expr": "psi_total_blocking_time{site=\"https://www.joytify.com/en-us\"}",
-          "legendFormat": "__auto",
+          "legendFormat": "{{strategy}}",
           "range": true,
           "refId": "A"
         }
@@ -2521,7 +2521,7 @@
           },
           "editorMode": "code",
           "expr": "psi_total_blocking_time{site=\"https://www.joytify.com/en-us/mobile-legends\"}",
-          "legendFormat": "__auto",
+          "legendFormat": "{{strategy}}",
           "range": true,
           "refId": "A"
         }
