@@ -1,0 +1,21 @@
+groups:
+  - name: psi-performance-alerts
+    interval: 1m
+    rules:
+      - alert: LowMobilePerformanceScore
+        expr: psi_performance_score{strategy="mobile"} * 100 < 50
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Mobile performance score is below 50"
+          description: "Mobile PSI score for {{ $labels.site }} is {{ $value }} (below 50)"
+
+      - alert: LowDesktopPerformanceScore
+        expr: psi_performance_score{strategy="desktop"} * 100 < 70
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Desktop performance score is below 70"
+          description: "Desktop PSI score for {{ $labels.site }} is {{ $value }} (below 70)"
